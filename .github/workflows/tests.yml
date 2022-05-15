@@ -47,6 +47,6 @@ jobs:
         run: go test -json ./... -coverprofile=coverage.txt -covermode=atomic -coverpkg=./telegram
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
